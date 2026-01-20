@@ -1,0 +1,87 @@
+body {
+    background-color: #D5AA65;
+    font-family: Arial, sans-serif;
+    color: #012C4E;
+}
+
+
+.about {
+    padding: 25px;
+   /* background-color: #4B5138;*/
+    width: 520px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #EAD292;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3) {
+  width: 25%;
+}
+
+.item:nth-child(4) {
+  width: 55%;
+  height: 200px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  }
+
+  .card {
+    padding: 25px;
+    background-color: #EAD292;
+    width: 520px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    color: #012C4E;
+    box-sizing: border-box;
+}
+
+
+h1, h2 {
+    color: #0B493A;
+    text-align: center;
+}
+
+
+.info {
+    color: #EAD292;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+ul, ol {
+    padding-left: 20px;
+}
+
+.interests li,
+.goals li {
+    color: #012C4E;
+    margin: 8px 0;
+}
+
+
+.quote p {
+    color: #012C4E;
+    font-style: italic;
+    text-align: center;
+}
+
+
+img {
+    display: block; 
+    margin: 15px auto;
+    border-radius: 10px;
+    border: none;
+    background: none;
+}
