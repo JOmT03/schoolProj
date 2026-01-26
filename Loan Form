@@ -1,0 +1,285 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    width: 650px;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid #000;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 60%;
+    padding: 6px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Radio buttons alignment */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Section spacing */
+br {
+    line-height: 1.8;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    background-color: #eaeaea;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #d5d5d5;
+}
+
+/* Small screen support */
+@media (max-width: 700px) {
+    form {
+        width: 95%;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Corpatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Loan Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+    <form action="#" method="post" autocomplete="on" target="_self">
+        <h1>Simple Loan Form</h1>
+        
+        <label for="FullName">Full Name :</label>
+        <input type="text" id="FullName" placeholder="Complete Name"><br>
+
+        <label for="number">number :</label>
+        <input type="text" id="number" placeholder="09-123456789" maxlength="11"><br>
+
+        <label for="email">email :</label>
+        <input type="text" id="email" required="@" placeholder="theUndeadKing@gmail.com"> <br>
+ 
+        <label for="date">Date of Birth :</label>
+        <input type="date" id="date"><br>
+
+<label for="gender">Gender :</label> <br>
+
+<label for="male">Male</label>
+<input type="radio"  id="male" value= "male" name="gender"> <br>
+
+<label for="female">Female</label>
+<input type="radio"  id="female" value= "female" name="gender"><br>
+
+<label for="age"> Age:</label>
+<input type="number" id="age"  min="21" max="50"> <br>
+
+<label for="Status">Civil Status :</label> <br>
+
+<label for="Single">Single :</label>
+<input type="radio"  id="Single" value= "Single" name="Status"> <br>
+
+<label for="Married">Married :</label>
+<input type="radio"  id="Married" value= "Married" name="Status"> <br>
+
+<label for="Seprated">Seprated :</label>
+<input type="radio"  id="Seprated" value= "Seprated" name="Status"> <br>
+
+<label for="ID">ID: </label>
+<select>
+<option value="Philsys">Philsys</option>
+<option value="SSS">SSS</option>
+<option value="DriversLicense">Drivers License</option>
+</select><br>
+<label for="File"> File</label>
+<input type="File" id="File" accept="image/png, image/jpeg, file/docx, file/pdf"> <br>
+
+<label for="collateral">collateral: </label>
+<select>
+<option value="kidney">kidney</option>
+<option value="child">Child</option>
+<option value="parents">Parents</option>
+<option value="House">House</option>
+<option value="Spouse">Spouse</option>
+</select> <br>
+
+<label for="Comment">Comment</label>
+<textarea id="Comment" rows="3" cols="30"></textarea> <br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+/* Page background */
+body {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Glass card form */
+form {
+    width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Pill-shaped inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 60%;
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Textarea adjustment */
+textarea {
+    border-radius: 20px;
+    resize: none;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.6);
+}
+
+/* Custom rounded radio buttons */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-right: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile support */
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
